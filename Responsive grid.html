@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: cornflowerblue;
+            color: cornsilk;
+            padding: 1% 5%;
+            text-align: center;
+        }
+        .nav-menu{
+            padding: 1% 5%;
+            background-color: darkcyan;
+        }
+        .nav-menu a{
+            color: ghostwhite;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            display: block;
+        }
+       .main{
+           padding: 1% 5%;
+           background-color: green;
+       }
+       .aside{
+           padding: 1% 5%;
+           background-color: #39a4ac;
+           text-align: center;
+       }
+       .footer{
+           background-color: greenyellow;
+           color: rgb(235, 16, 16);
+           padding: 20px;
+           text-align: center;
+           font-size: 0.8rem;
+       }
+
+
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+
+
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        }
+
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+
+            .nav-menu a{
+                text-align: center;
+                background-color: coral;
+                margin: 10px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Md Junayed</h1>
+    </div>
+
+
+    <div class="row">
+        <div class="nav-menu col-2">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">contract</a>
+        </div>
+
+
+        <div class="main col-7">
+            <h1>I am a web designer</h1>
+            <p>No sadipscing et kasd duo sanctus, sadipscing tempor sadipscing et et dolore dolor dolores justo sit. Amet dolor eos dolor.</p>
+
+            <p>Amet est sanctus dolores consetetur magna, est et dolor tempor et et erat. Sanctus et labore duo stet et diam rebum sea dolore, kasd dolor eos ut diam. Labore nonumy aliquyam no eirmod. Dolor sed et aliquyam et. Aliquyam at ipsum vero labore sadipscing justo sed et, diam invidunt magna.</p>
+
+            <p>Lorem amet dolor gubergren eos invidunt magna amet consetetur lorem, sit sadipscing at kasd dolores clita ipsum consetetur duo, rebum diam lorem aliquyam dolores vero, et ipsum labore ipsum aliquyam magna sanctus sed invidunt, tempor accusam sadipscing lorem dolores tempor sea vero, ipsum amet sanctus accusam erat sit sed accusam.</p>
+
+        </div>
+
+
+        <div class="aside col-3">
+            <h2>What I love?</h2>
+            <p>Sadipscing sanctus sea stet dolores magna sadipscing, sea amet est et amet ea. No ut at kasd rebum et sed.</p>
+            <h2>What I Do?</h2>
+            <p>Ut lorem eirmod stet dolore sea diam ipsum justo, amet dolor diam labore voluptua et diam erat. No consetetur kasd.</p>
+
+            <h2>What I don't love</h2>
+            <p>No takimata no stet sed ut ut sed sed sea dolor. Labore sit amet est eos est elitr duo, elitr.</p>
+
+            <h2>What I don't Do?</h2>
+            <P>Invidunt sit kasd dolore dolor dolore, sit at takimata sed lorem accusam et justo et eos. Eirmod amet dolor sadipscing.</P>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy;MD Junayed
+    </div>
+
+</body>
+</html>
